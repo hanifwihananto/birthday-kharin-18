@@ -1,57 +1,72 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #db8758;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    min-height: 100%;
+  }
+
+  .title {
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    margin-top: 50px;
+    text-align: center;
+    color: #b13d14;
+  }
+
+  .panda-1 img {
+    width: 100px;
+    position: absolute;
+    transform: scaleX(-1);
   }
   
-  body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #db8758;
+  .panda-2 img {
+    width: 100px;
+    position: absolute;
+    right: 1px;
+    top: 450px;
+    z-index: -99;
+  }
+
+  .img {
+    text-align: center;
+    margin: 50px auto;
   }
   
-  @media (max-width: 600px) {
-    .container {
-      width: 100%;
-      min-height: 100%;
-    }
-  
-    .title {
-      font-family: "Poppins", sans-serif;
-      font-size: 32px;
-      margin-top: 50px;
-      text-align: center;
-      color: #b13d14;
-    }
-  
-    .img {
-      text-align: center;
-      margin: 50px auto;
-    }
-    .img img {
-      width: 300px;
-    }
-  
-    .box-btn {
-      text-align: center;
-    }
-  
-    .btn {
-      border: none;
-      outline: none;
-      width: 250px;
-      height: 50px;
-      margin: 0 auto;
-      text-align: center;
-      align-items: center;
-      border-radius: 10px;
-      background: #9c1a04;
-      color: white;
-      font-size: 24px;
-      font-family: 'Poppins';
-      font-weight: 600;
-    }
-  
-    .btn a {
-      text-decoration: none;
-    }
+  .img img {
+    width: 300px;
   }
+
+  .box-btn {
+    text-align: center;
+  }
+
+  .btn {
+    border: none;
+    outline: none;
+    width: 250px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #9c1a04;
+    color: white;
+    font-size: 24px;
+    font-family: 'Poppins';
+    font-weight: 600;
+  }
+
+  .btn a {
+    text-decoration: none;
+  }
+}
